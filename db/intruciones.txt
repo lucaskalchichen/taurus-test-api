@@ -1,0 +1,24 @@
+tenes que cargar las base de datos 
+
+1 conetate a la shell del contenerdor de la db
+
+docker exec -it db bash
+
+2 conectate a sql desde la terminal del contenedor 
+
+mysql -u root -p
+
+contrasena 
+root
+
+3 carga sakila ejecutando los siguientes comnados ejecutar uno a la vez
+
+SOURCE /tmp/sakila-schema.sql;
+
+SOURCE /tmp/sakila-data.sql;
+
+4 verificar si los cargaste correctamente (ejecutar uno a la vez)
+
+USE sakila;
+
+SHOW FULL TABLES;

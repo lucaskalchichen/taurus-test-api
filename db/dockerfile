@@ -1,0 +1,15 @@
+# Imagen base
+FROM mysql:8.4
+
+# Definir variables de entorno
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=sakila
+ENV MYSQL_USER=myuser
+ENV MYSQL_PASSWORD=mypassword
+
+# Copiar los scripts de la base de datos al contenedor
+COPY sakila-db/ /tmp/
+
+
+# Exponer el puerto
+EXPOSE 3307:3306
