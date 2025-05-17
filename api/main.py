@@ -140,11 +140,37 @@ def get_all_actors():
 # Endpoint 5: Obtener todas las películas optimizado
 @app.get("/v2/movies")
 def get_all_movies():
-    
-    cursor.execute("SELECT * FROM film ")
-    movies = cursor.fetchall()
+    query = """
+        SELECT 
+            f.film_id, f.title, f.description, f.release_year,
+            a.actor_id, a.first_name, a.last_name
+        FROM film f
+        LEFT JOIN film_actor fa ON f.film_id = fa.film_id
+        LEFT JOIN actor a ON fa.actor_id = a.actor_id
+    """
+    cursor.execute(query)
+    rows = cursor.fetchall()
 
-    return {"movies": movies}
+    movies_dict = {}
+    for row in rows:
+        film_id = row["film_id"]
+        if film_id not in movies_dict:
+            movies_dict[film_id] = {
+                "film_id": film_id,
+                "title": row["title"],
+                "description": row["description"],
+                "release_year": row["release_year"],
+                "actors": []
+            }
+        if row["actor_id"]:
+            actor = {
+                "actor_id": row["actor_id"],
+                "first_name": row["first_name"],
+                "last_name": row["last_name"]
+            }
+            movies_dict[film_id]["actors"].append(actor)
+
+    return {"movies": list(movies_dict.values())}
 
 # Endpoint 6: Obtener todos los clientes optimizado
 @app.get("/v2/customers")
