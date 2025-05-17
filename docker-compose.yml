@@ -4,6 +4,7 @@ services:
   db:
     build: ./db
     container_name: db
+
     restart: always
     ports:
       - "3307:3306"
@@ -28,3 +29,7 @@ networks:
   internal_network:
     driver: bridge
 
+
+volumes:
+  db_data:
+    driver: local

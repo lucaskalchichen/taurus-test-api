@@ -21,4 +21,4 @@ SOURCE /tmp/sakila-data.sql;
 
 USE sakila;
 
-SHOW FULL TABLES;
+SHOW FULL TABLES;exit

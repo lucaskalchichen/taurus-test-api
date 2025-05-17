@@ -38,3 +38,8 @@ reporting:
 settings:
   check-interval: 2s  # intervalo para recopilar métricas
   verbose: false      # más detalles en la salida de consola
+
+
+modules:
+  blazemeter:
+    token: d5d1c81cc84d9e67a8af15a0:da65597d5df182300f41cc14e2bea4aba9a1caa43c3e843a63205e5c02b81d47992772e6
