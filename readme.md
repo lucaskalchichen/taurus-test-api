@@ -16,7 +16,7 @@
 4. **Accede a la API**  
    Una vez que los servicios estén corriendo, puedes acceder a la API en `http://localhost:8000`. También puedes explorar la documentación interactiva de la API en:
    - **Swagger UI**: `http://localhost:8000/docs`
-   - **ReDoc**: `http://localhost:8000/redoc`
+   
 
 ## Notas adicionales
 
