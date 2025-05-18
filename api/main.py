@@ -4,6 +4,11 @@ import mysql.connector
 
 import aiomysql
 
+from fastapi_cache import FastAPICache
+from fastapi_cache.backends.inmemory import InMemoryBackend
+from fastapi_cache.decorator import cache
+from datetime import timedelta
+
 
 
 # Conexión a la base de datos
@@ -19,6 +24,12 @@ async def get_connection():
 
 
 app = FastAPI()
+
+# Configurar FastAPICache al iniciar la aplicación
+@app.on_event("startup")
+async def startup():
+    FastAPICache.init(InMemoryBackend(), prefix="fastapi-cache")
+
 
 # Endpoint 1: Obtener el inventario de peliculas por tienda
 @app.get("/v1/inventory")
@@ -155,6 +166,8 @@ async def get_all_customers():
 
 # Endpoint 4: Obtener inventario optimizado
 @app.get("/v2/inventory")
+@cache(expire=timedelta(minutes=40))  # Caché válida por 40 minutos
+
 async def get_inventory():
     """
     Versión optimizada del endpoint de inventario utilizando JOINs y agregaciones SQL.
@@ -206,6 +219,8 @@ async def get_inventory():
 
 # Endpoint 5: Obtener películas optimizado
 @app.get("/v2/movies")
+@cache(expire=timedelta(minutes=40))  # Caché válida por 40 minutos
+
 async def get_all_movies():
     """
     Versión optimizada del endpoint de películas utilizando JOINs SQL.
@@ -260,6 +275,7 @@ async def get_all_movies():
 
 # Endpoint 6: Obtener clientes optimizado
 @app.get("/v2/customers")
+@cache(expire=timedelta(minutes=5))  # Caché válida por 5 minutos
 async def get_all_customers():
     """
     Versión optimizada del endpoint de clientes utilizando JOINs SQL multinivel.
