@@ -26,10 +26,10 @@ reporting:
     percentiles: true 
     failed-labels: false
     test-duration: true
-    dump-csv: /tmp/artifacts/perf_result_csv.csv
+    dump-csv: /test/repots/perf_result_csv.csv
   - module: junit-xml
     data-source: pass-fail
-    filename: /tmp/artifacts/junit-result.xml
+    filename: /test/reports/junit-result.xml
 
 settings:
   check-interval: 2s  # intervalo para recopilar métricas
