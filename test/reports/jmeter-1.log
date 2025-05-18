@@ -1,0 +1,62 @@
+2025-05-18 21:55:58,049 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2025-05-18 21:55:58,060 INFO o.a.j.JMeter: Loading user properties from: /root/.bzt/jmeter-taurus/5.5/bin/user.properties
+2025-05-18 21:55:58,061 INFO o.a.j.JMeter: Loading system properties from: /root/.bzt/jmeter-taurus/5.5/bin/system.properties
+2025-05-18 21:55:58,061 INFO o.a.j.JMeter: Loading additional properties from: /tmp/artifacts/jmeter-bzt-1.properties
+2025-05-18 21:55:58,062 INFO o.a.j.JMeter: Setting System properties from file: /tmp/artifacts/system-1.properties
+2025-05-18 21:55:58,065 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: Version 5.5
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: java.version=11.0.27
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: os.name=Linux
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: os.arch=amd64
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: os.version=5.15.167.4-microsoft-standard-WSL2
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: java.awt.headless=true
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: Max memory     =4160749568
+2025-05-18 21:55:58,066 INFO o.a.j.JMeter: Available Processors =28
+2025-05-18 21:55:58,069 INFO o.a.j.JMeter: Default Locale=English (United States)
+2025-05-18 21:55:58,070 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2025-05-18 21:55:58,070 INFO o.a.j.JMeter: JMeterHome=/root/.bzt/jmeter-taurus/5.5
+2025-05-18 21:55:58,070 INFO o.a.j.JMeter: user.dir  =/bzt-configs
+2025-05-18 21:55:58,070 INFO o.a.j.JMeter: PWD       =/bzt-configs
+2025-05-18 21:55:58,070 INFO o.a.j.JMeter: IP: 172.18.0.4 Name: bd039affccc7 FullName: bd039affccc7
+2025-05-18 21:55:58,070 INFO o.a.j.JMeter: user.classpath=/tmp/artifacts:/tmp/artifacts
+2025-05-18 21:55:58,071 INFO o.a.j.JMeter: Adding to classpath and loader: /tmp/artifacts
+2025-05-18 21:55:58,072 INFO o.a.j.JMeter: Adding to classpath and loader: /tmp/artifacts
+2025-05-18 21:55:58,078 INFO o.a.j.s.FileServer: Default base='/bzt-configs'
+2025-05-18 21:55:58,078 INFO o.a.j.s.FileServer: Set new base='/tmp/artifacts'
+2025-05-18 21:55:58,164 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-05-18 21:55:58,177 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-05-18 21:55:58,179 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-05-18 21:55:58,181 INFO o.a.j.s.SaveService: Loading file: /tmp/artifacts/modified_requests-1.jmx
+2025-05-18 21:55:58,203 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2025-05-18 21:55:58,204 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-05-18 21:55:58,212 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-18 21:55:58,213 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-18 21:55:58,213 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-18 21:55:58,213 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-18 21:55:58,213 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-05-18 21:55:58,213 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-05-18 21:55:58,230 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-05-18 21:55:58,230 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-18 21:55:58,231 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-18 21:55:58,237 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-05-18 21:55:58,238 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-05-18 21:55:58,383 INFO o.a.j.JMeter: Running test (1747605358383)
+2025-05-18 21:55:58,393 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : api-test
+2025-05-18 21:55:58,393 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group api-test.
+2025-05-18 21:55:58,393 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-05-18 21:55:58,395 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-05-18 21:55:58,395 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2025-05-18 21:55:59,910 INFO o.a.j.t.JMeterThread: Thread started: api-test-ThreadStarter 1-1
+2025-05-18 21:55:59,911 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-05-18 21:55:59,911 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-05-18 21:55:59,911 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-05-18 21:55:59,912 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-05-18 21:55:59,921 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = bd039affccc7
+2025-05-18 21:55:59,923 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-05-18 21:56:11,886 INFO c.b.j.t.c.ConcurrencyThreadStarter: Done supplying threads
+2025-05-18 21:56:12,153 INFO o.a.j.t.JMeterThread: Thread is done: api-test-ThreadStarter 1-1
+2025-05-18 21:56:12,154 INFO o.a.j.t.JMeterThread: Thread finished: api-test-ThreadStarter 1-1
+2025-05-18 21:56:12,156 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-05-18 21:56:12,160 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test

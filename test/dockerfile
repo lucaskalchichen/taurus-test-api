@@ -1,0 +1,15 @@
+# image
+FROM blazemeter/taurus:latest
+
+# Copiar los scripts de la base de datos al contenedor
+COPY ./test-v2.yaml  /tmp/
+COPY ./test-v1.yaml  /tmp/
+
+# Crear directorios para resultados
+RUN mkdir -p /tmp/artifacts
+
+# Create an entrypoint script to run tests
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]

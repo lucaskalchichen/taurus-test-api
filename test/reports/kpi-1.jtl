@@ -1,0 +1,27 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1747605359943,300,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,298,bd039affccc7,10
+1747605360244,365,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,364,bd039affccc7,0
+1747605360610,788,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,782,bd039affccc7,0
+1747605361399,286,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,286,bd039affccc7,0
+1747605361686,364,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,362,bd039affccc7,0
+1747605362051,788,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,784,bd039affccc7,0
+1747605362840,285,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,285,bd039affccc7,0
+1747605363126,362,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,360,bd039affccc7,0
+1747605363489,802,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,799,bd039affccc7,0
+1747605364292,286,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,286,bd039affccc7,0
+1747605364579,369,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,367,bd039affccc7,0
+1747605364948,813,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,810,bd039affccc7,0
+1747605365762,288,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,288,bd039affccc7,0
+1747605366050,362,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,361,bd039affccc7,0
+1747605366413,789,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,786,bd039affccc7,0
+1747605367203,286,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,286,bd039affccc7,0
+1747605367489,360,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,358,bd039affccc7,0
+1747605367850,780,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,777,bd039affccc7,0
+1747605368631,286,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,286,bd039affccc7,0
+1747605368918,360,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,359,bd039affccc7,0
+1747605369279,792,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,789,bd039affccc7,0
+1747605370042,286,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,286,bd039affccc7,0
+1747605370329,365,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,363,bd039affccc7,0
+1747605370694,809,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,807,bd039affccc7,0
+1747605371504,288,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,288,bd039affccc7,0
+1747605371793,360,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,357,bd039affccc7,0

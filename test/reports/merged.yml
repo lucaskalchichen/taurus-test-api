@@ -1,0 +1,34 @@
+---
+execution:
+- concurrency: 1
+  executor: jmeter
+  hold-for: 10s
+  ramp-up: 3s
+  scenario: api-test
+reporting:
+- module: console
+- dump-csv: TaurusResult/perf_result_csv.csv
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  test-duration: true
+- data-source: pass-fail
+  filename: TaurusResult/junit-result.xml
+  module: junit-xml
+scenarios:
+  api-test:
+    requests:
+    - label: get-actors
+      method: GET
+      url: http://api:8000/v2/inventory
+    - label: get-movies
+      method: GET
+      url: http://api:8000/v2/movies
+    - label: get-customers
+      method: GET
+      url: http://api:8000/v2/customers
+settings:
+  check-interval: 2s
+  verbose: false
+

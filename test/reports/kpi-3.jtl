@@ -1,0 +1,27 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1747605468241,298,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,296,96e8f23a7950,8
+1747605468540,362,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,361,96e8f23a7950,0
+1747605468902,778,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,773,96e8f23a7950,0
+1747605469682,288,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,288,96e8f23a7950,0
+1747605469971,363,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,361,96e8f23a7950,0
+1747605470335,809,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,807,96e8f23a7950,0
+1747605471145,287,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,287,96e8f23a7950,0
+1747605471432,361,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,359,96e8f23a7950,0
+1747605471794,776,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,774,96e8f23a7950,0
+1747605472571,287,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,286,96e8f23a7950,0
+1747605472858,355,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,353,96e8f23a7950,0
+1747605473214,789,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,786,96e8f23a7950,0
+1747605474005,291,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,291,96e8f23a7950,0
+1747605474297,360,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,358,96e8f23a7950,0
+1747605474658,794,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,792,96e8f23a7950,0
+1747605475453,288,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,287,96e8f23a7950,0
+1747605475741,373,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,371,96e8f23a7950,0
+1747605476115,797,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,794,96e8f23a7950,0
+1747605476913,285,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,285,96e8f23a7950,0
+1747605477198,362,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,360,96e8f23a7950,0
+1747605477561,783,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,780,96e8f23a7950,0
+1747605478345,289,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,289,96e8f23a7950,0
+1747605478634,361,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,359,96e8f23a7950,0
+1747605478996,795,get-customers,200,OK,api-test-ThreadStarter 1-1,true,2989055,1,1,791,96e8f23a7950,0
+1747605479791,288,get-actors,200,OK,api-test-ThreadStarter 1-1,true,78143,1,1,288,96e8f23a7950,0
+1747605480079,361,get-movies,200,OK,api-test-ThreadStarter 1-1,true,923593,1,1,358,96e8f23a7950,0

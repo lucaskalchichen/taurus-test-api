@@ -23,6 +23,18 @@ services:
     networks:
       - internal_network
 
+  test:
+    build: ./test
+    container_name: test
+    depends_on:
+      - api
+    volumes:
+      - ./test:/app
+      - ./test/reports:/tmp/artifacts  
+    networks:
+      - internal_network
+
+
 
 
 networks:
