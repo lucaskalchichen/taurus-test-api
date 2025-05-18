@@ -9,13 +9,13 @@ execution:
 scenarios:
   api-test:
     requests:
-      - url: http://api:8000/v1/inventory
+      - url: http://localhost:8000/v1/inventory
         method: GET
         label: get-actors
-      - url: http://api:8000/v1/movies
+      - url: http://localhost:8000/v1/movies
         method: GET
         label: get-movies
-      - url: http://api:8000/v1/customers
+      - url: http://localhost:8000/v1/customers
         method: GET
         label: get-customers
 
