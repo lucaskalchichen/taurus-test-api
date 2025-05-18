@@ -16,7 +16,7 @@ cursor = mydb.cursor(dictionary=True)
 
 app = FastAPI()
 
-# Endpoint 1: Obtener todos los actores
+# Endpoint 1: Obtener el inventario de peliculas por tienda
 @app.get("/v1/inventory")
 def get_inventory():
     """
@@ -111,15 +111,32 @@ def get_all_customers():
 
 
 # Endpoint 4: Obtener todos los actores optimizado
-@app.get("/v2/actors")
-def get_all_actors():
-
-
-    cursor.execute("SELECT * FROM actor")
-    actors = cursor.fetchall()
-
-    
-    return {"actors": actors}
+@app.get("/v2/inventory")
+def get_inventory():
+    cursor.execute("""
+                    SELECT s.store_id,f.film_id,f.title,
+                    COUNT(i.inventory_id) AS cantidad
+                    FROM
+                    store s
+                    JOIN inventory i ON s.store_id = i.store_id
+                    JOIN film f ON i.film_id = f.film_id
+                    GROUP BY s.store_id, f.film_id, f.title
+                    ORDER BY s.store_id, f.title;
+                   """)
+    rows = cursor.fetchall()
+    # Organizar la respuesta agrupando por tienda
+    stores = {}
+    for row in rows:
+        store_id = row["store_id"]
+        movie = {
+            "film_id": row["film_id"],
+            "title": row["title"],
+            "count": row["cantidad"]
+        }
+        if store_id not in stores:
+            stores[store_id] = {"store_id": store_id, "movies": []}
+        stores[store_id]["movies"].append(movie)
+    return {"stores": list(stores.values())}
 
 # Endpoint 5: Obtener todas las películas optimizado
 @app.get("/v2/movies")
