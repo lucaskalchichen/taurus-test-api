@@ -30,7 +30,12 @@ reporting:
   - module: junit-xml
     data-source: pass-fail
     filename: /tmp/artifacts/junit-result.xml
-
+  - module: blazemeter
+    report-name: API Performance Test 1
+    test: API Test v1
+    project: API Testing
+    public-report: true
+    token: 3ce8d3fd81b16f0f141b122c:f360f8500838d23456221a8285a253240d1103b4115f33c02ec7958c9a361c13568e5814
 
 settings:
   check-interval: 2s  # intervalo para recopilar métricas
