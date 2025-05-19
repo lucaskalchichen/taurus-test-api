@@ -166,7 +166,7 @@ async def get_all_customers():
 
 # Endpoint 4: Obtener inventario optimizado
 @app.get("/v2/inventory")
-@cache(expire=timedelta(minutes=40))  # Caché válida por 40 minutos
+@cache(expire=60*40)  # Caché válida por 40 minutos
 
 async def get_inventory():
     """
@@ -219,7 +219,7 @@ async def get_inventory():
 
 # Endpoint 5: Obtener películas optimizado
 @app.get("/v2/movies")
-@cache(expire=timedelta(minutes=40))  # Caché válida por 40 minutos
+@cache(expire=60*40)  # Caché válida por 40 minutos
 
 async def get_all_movies():
     """
@@ -275,7 +275,7 @@ async def get_all_movies():
 
 # Endpoint 6: Obtener clientes optimizado
 @app.get("/v2/customers")
-@cache(expire=timedelta(minutes=5))  # Caché válida por 5 minutos
+@cache(expire=60*5)  # Caché válida por 5 minutos
 async def get_all_customers():
     """
     Versión optimizada del endpoint de clientes utilizando JOINs SQL multinivel.
