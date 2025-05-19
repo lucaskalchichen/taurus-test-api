@@ -26,7 +26,7 @@ reporting:
     percentiles: true 
     failed-labels: false
     test-duration: true
-    dump-csv: ./test/repots/perf_result_csv.csv
+    dump-csv: ./test/reports/perf_result_csv.csv
   - module: junit-xml
     data-source: pass-fail
     filename: ./test/reports/junit-result.xml
