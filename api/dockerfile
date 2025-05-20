@@ -12,7 +12,6 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-
 # Exponer el puerto en el que se ejecutará la aplicación
 EXPOSE 8000
 

@@ -9,7 +9,12 @@ from fastapi_cache.backends.inmemory import InMemoryBackend
 from fastapi_cache.decorator import cache
 from datetime import timedelta
 
+import sys
+import os
 
+# Añadir el directorio actual al path para importar monitoring.py
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from monitoring import init_monitoring
 
 # Conexión a la base de datos
 async def get_connection():
@@ -25,6 +30,8 @@ async def get_connection():
 
 app = FastAPI()
 
+# Inicializar el monitoreo después de crear la app
+init_monitoring(app)
 # Configurar FastAPICache al iniciar la aplicación
 @app.on_event("startup")
 async def startup():

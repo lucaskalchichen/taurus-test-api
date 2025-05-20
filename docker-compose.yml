@@ -23,18 +23,19 @@ services:
     networks:
       - internal_network
 
-  test:
-    build: ./test
-    container_name: test
-    depends_on:
-      - api
+# Servicio Graphite para almacenar métricas de rendimiento
+  graphite:
+    image: graphiteapp/graphite-statsd
+    container_name: graphite
+    ports:
+      - "80:80"       # Interfaz web de Graphite (útil para verificación)
+      - "2003:2003"   # Puerto para recibir datos de métricas
+      - "8125:8125/udp" # Puerto para StatsD
+      - "8126:8126"   # Puerto para la API de Graphite
     volumes:
-      - ./test:/app
-      - ./test/reports:/tmp/artifacts  
+      - graphite-data:/var/lib/graphite/whisper  # Persistencia para datos de Graphite
     networks:
       - internal_network
-
-
 
 
 networks:
@@ -44,4 +45,6 @@ networks:
 
 volumes:
   db_data:
+    driver: local
+  graphite-data:
     driver: local

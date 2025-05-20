@@ -44,3 +44,6 @@ tzdata==2025.2
 uvicorn==0.34.2
 watchfiles==1.0.5
 websockets==15.0.1
+graphyte==1.7.1
+psutil==5.9.5
+prometheus-fastapi-instrumentator==6.1.0
