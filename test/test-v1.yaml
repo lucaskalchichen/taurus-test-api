@@ -18,7 +18,18 @@ scenarios:
       - url: http://localhost:8000/v1/customers
         method: GET
         label: get-customers
-
+services:
+- module: monitoring
+  graphite:
+  - address: http://localhost:80
+    interval: 5s
+    from: 100s
+    until: 1s
+    timeout: 2s
+    logging: True # those logs will be saved to "Graphitelogs_192.168.0.38.csv" in the artifacts dir
+    metrics:
+    - api.performance.cpu.percent
+    - api.performance.memory.percent
 reporting:
   - module: console
   - module: final-stats
