@@ -1,0 +1,41 @@
+---
+execution:
+- concurrency: 42
+  executor: jmeter
+  iterations: 1
+  ramp-up: 3s
+  scenario: api-test
+reporting:
+- module: console
+- dump-csv: ./test/reports/perf_result_csv.csv
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  test-duration: true
+- data-source: pass-fail
+  filename: ./test/reports/junit-result.xml
+  module: junit-xml
+- filename: ./test/reports/junit-result.xml
+  module: blazemeter
+  project: API Testing
+  public-report: true
+  report-name: API Performance Test 1
+  test: API Test v1
+  token: '********'
+scenarios:
+  api-test:
+    requests:
+    - label: get-inventory
+      method: GET
+      url: http://api:8000/v1/inventory
+    - label: get-movies
+      method: GET
+      url: http://api:8000/v1/movies
+    - label: get-customers
+      method: GET
+      url: http://api:8000/v1/customers
+settings:
+  check-interval: 2s
+  verbose: false
+

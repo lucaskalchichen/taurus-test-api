@@ -1,0 +1,631 @@
+[2025-05-21 12:06:29,546 INFO root] Taurus CLI Tool v1.16.41
+[2025-05-21 12:06:29,546 DEBUG root] Build: 14685 Mon Apr 28 12:12:54 UTC 2025
+[2025-05-21 12:06:29,546 DEBUG root] Extended git info:  7331a7e5 Release 1.16.41
+[2025-05-21 12:06:29,547 DEBUG root] Command-line options: {'log': '/tmp/bzt_3c4_8syx.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2025-05-21 12:06:29,547 DEBUG root] Python: CPython 3.10.12
+[2025-05-21 12:06:29,547 DEBUG root] OS: uname_result(system='Linux', node='kalchi-pc', release='5.15.167.4-microsoft-standard-WSL2', version='#1 SMP Tue Nov 5 00:21:55 UTC 2024', machine='x86_64')
+[2025-05-21 12:06:29,547 DEBUG root] Path to interpreter: /usr/bin/python3
+[2025-05-21 12:06:29,547 DEBUG root] Path to packages: ['/usr/local/bin', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+[2025-05-21 12:06:29,547 DEBUG root] Default python: /home/lucas/.pyenv/shims/python
+[2025-05-21 12:06:29,547 DEBUG root] Default python3: /home/lucas/.pyenv/shims/python3
+[2025-05-21 12:06:29,547 DEBUG root] Using personal config: /home/lucas/.bzt-rc
+[2025-05-21 12:06:29,547 INFO root] Starting with configs: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 12:06:29,547 INFO Engine] Configuring...
+[2025-05-21 12:06:29,562 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.10/dist-packages/bzt/resources/10-base-config.yml']
+[2025-05-21 12:06:29,562 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.10/dist-packages/bzt/resources/10-base-config.yml']
+[2025-05-21 12:06:29,562 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.10/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2025-05-21 12:06:29,569 DEBUG Engine] User configs list: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 12:06:29,569 DEBUG Engine.Configuration] Configs: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 12:06:29,569 DEBUG Engine.Configuration] Reading /home/lucas/.bzt-rc as YAML
+[2025-05-21 12:06:29,571 DEBUG Engine.Configuration] Reading test-v1.yaml as YAML
+[2025-05-21 12:06:29,573 DEBUG Engine.Configuration] Configs: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 12:06:29,573 DEBUG Engine.Configuration] Reading /home/lucas/.bzt-rc as YAML
+[2025-05-21 12:06:29,575 DEBUG Engine.Configuration] Reading test-v1.yaml as YAML
+[2025-05-21 12:06:29,577 INFO HTTPClient] Proxy settings not set
+[2025-05-21 12:06:29,578 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.16.41&installID=linux-d1044670b7c
+[2025-05-21 12:06:29,578 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.16.41&installID=linux-d1044670b7c
+[2025-05-21 12:06:29,578 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2025-05-21 12:06:29,579 INFO Engine] Artifacts dir: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074
+[2025-05-21 12:06:29,580 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective
+[2025-05-21 12:06:29,582 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.yml
+[2025-05-21 12:06:29,590 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.json
+[2025-05-21 12:06:29,591 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/merged.yml
+[2025-05-21 12:06:29,593 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/merged.yml
+[2025-05-21 12:06:29,596 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/merged.json
+[2025-05-21 12:06:29,597 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/merged.json
+[2025-05-21 12:06:29,598 DEBUG Engine] Add existing artifact (move=False): /home/lucas/.bzt-rc
+[2025-05-21 12:06:29,598 DEBUG Engine] Copying /home/lucas/.bzt-rc to /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/.bzt-rc
+[2025-05-21 12:06:29,601 DEBUG Engine] Add existing artifact (move=False): test-v1.yaml
+[2025-05-21 12:06:29,601 DEBUG Engine] Copying test-v1.yaml to /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/test-v1.yaml
+[2025-05-21 12:06:29,604 DEBUG Engine] Set PYTHONPATH to :
+	CURRENT: '' +
+	TEMP: '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/python-packages/3.10.12' +
+	USER: '/home/lucas/.bzt/python-packages/3.10.12'
+[2025-05-21 12:06:29,604 DEBUG Engine] Content of user packages dir: []
+[2025-05-21 12:06:29,605 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2025-05-21 12:06:29,605 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074
+[2025-05-21 12:06:29,605 DEBUG root] Closing log handler: /tmp/bzt_3c4_8syx.log
+[2025-05-21 12:06:29,609 DEBUG root] Switched writing logs to /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/bzt.log
+[2025-05-21 12:06:29,610 DEBUG root] Linting config
+[2025-05-21 12:06:29,610 INFO Engine] Preparing...
+[2025-05-21 12:06:29,611 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2025-05-21 12:06:29,611 DEBUG root] Importing module: bzt.modules.aggregator
+[2025-05-21 12:06:29,687 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/aggregator.py'>
+[2025-05-21 12:06:29,687 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2025-05-21 12:06:29,689 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2025-05-21 12:06:29,689 DEBUG root] Importing module: bzt.modules.monitoring
+[2025-05-21 12:06:29,690 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/monitoring.py'>
+[2025-05-21 12:06:29,692 INFO Engine.monitoring.LocalClient] Using StandardLocalMonitor for engine health monitoring
+[2025-05-21 12:06:29,693 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2025-05-21 12:06:29,693 DEBUG root] Importing module: bzt.modules.provisioning
+[2025-05-21 12:06:29,693 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/provisioning.py'>
+[2025-05-21 12:06:29,693 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler', 'mqtt': 'bzt.jmx.mqtt.MQTTProtocolHandler', 'grpc': 'bzt.jmx.grpc.GRPCProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2025-05-21 12:06:29,693 DEBUG root] Importing module: bzt.modules.jmeter
+[2025-05-21 12:06:29,698 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/jmeter.py'>
+[2025-05-21 12:06:29,698 DEBUG Engine.local] Preparing executor: jmeter/140069628959504
+[2025-05-21 12:06:29,699 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/jmeter.log
+[2025-05-21 12:06:29,699 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2025-05-21 12:06:29,705 DEBUG Engine.jmeter] Port 4445 is free
+[2025-05-21 12:06:29,705 DEBUG Engine.jmeter] Using port 4445 for management
+[2025-05-21 12:06:29,706 DEBUG Engine.jmeter] Getting Jmeter version.
+[2025-05-21 12:06:29,706 DEBUG Engine.jmeter] Autodetect version is enabled
+[2025-05-21 12:06:29,706 DEBUG Engine.jmeter] JMeter version: 5.5
+[2025-05-21 12:06:29,706 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/requests.jmx
+[2025-05-21 12:06:29,706 DEBUG root] Importing module: bzt.jmx.http
+[2025-05-21 12:06:29,706 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/lib/python3.10/dist-packages/bzt/jmx/http.py'>
+[2025-05-21 12:06:29,707 DEBUG root] Importing module: bzt.jmx.mqtt
+[2025-05-21 12:06:29,707 DEBUG root] Loading class: 'MQTTProtocolHandler' from <module 'bzt.jmx.mqtt' from '/usr/local/lib/python3.10/dist-packages/bzt/jmx/mqtt.py'>
+[2025-05-21 12:06:29,707 DEBUG root] Importing module: bzt.jmx.grpc
+[2025-05-21 12:06:29,708 DEBUG root] Loading class: 'GRPCProtocolHandler' from <module 'bzt.jmx.grpc' from '/usr/local/lib/python3.10/dist-packages/bzt/jmx/grpc.py'>
+[2025-05-21 12:06:29,708 DEBUG JMeterScenarioBuilder] Saving JMX to: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/requests.jmx
+[2025-05-21 12:06:29,710 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2025-05-21 12:06:29,710 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/system.properties
+[2025-05-21 12:06:29,711 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074:/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074'}
+[2025-05-21 12:06:29,711 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/jmeter-bzt.properties
+[2025-05-21 12:06:29,712 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2025-05-21 12:06:29,712 DEBUG root] Executing shell: ['java', '-version'] at .
+[2025-05-21 12:06:29,733 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "11.0.27" 2025-04-15
+OpenJDK Runtime Environment (build 11.0.27+6-post-Ubuntu-0ubuntu122.04)
+OpenJDK 64-Bit Server VM (build 11.0.27+6-post-Ubuntu-0ubuntu122.04, mixed mode, sharing)
+
+[2025-05-21 12:06:29,733 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2025-05-21 12:06:29,733 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2025-05-21 12:06:29,734 DEBUG root] Executing shell: ['/home/lucas/.bzt/jmeter-taurus/5.5/bin/jmeter.sh', '-j', '/tmp/jmeter_qgsbcu6log', '--version'] at .
+[2025-05-21 12:06:30,256 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) |
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.5
+
+Copyright (c) 1999-2022 The Apache Software Foundation
+
+ / 
+[2025-05-21 12:06:30,258 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/kpi.jtl
+[2025-05-21 12:06:30,258 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/error.jtl
+[2025-05-21 12:06:30,259 DEBUG Engine.jmeter.LoadSettingsProcessor] Load: LoadSpec(concurrency=42, throughput=None, ramp_up=3.0, hold=0, iterations=1, duration=3.0, steps=None)
+[2025-05-21 12:06:30,259 DEBUG Engine.jmeter.LoadSettingsProcessor] Thread group detection: iterations are found, regular ThreadGroup will be used
+[2025-05-21 12:06:30,260 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (api-test) to ThreadGroup and apply load parameters
+[2025-05-21 12:06:30,260 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx
+[2025-05-21 12:06:30,260 DEBUG JMX] Saving JMX to: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx
+[2025-05-21 12:06:30,262 DEBUG root] Executing shell: ['/home/lucas/.bzt/jmeter-taurus/5.5/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx'] at .
+[2025-05-21 12:06:31,015 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx
+2025-05-21 12:06:30,691 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2025-05-21 12:06:30,717 INFO o.j.r.JARSourceHTTP: Found cached repo
+2025-05-21 12:06:30,825 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.2, jpgc-casutg=3.1, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.10, jpgc-tst=2.6, jmeter-core=5.5, jmeter-ftp=5.5, jmeter-http=5.5, jmeter-jdbc=5.5, jmeter-jms=5.5, jmeter-junit=5.5, jmeter-java=5.5, jmeter-ldap=5.5, jmeter-mail=5.5, jmeter-mongodb=5.5, jmeter-native=5.5, jmeter-tcp=5.5, jmeter-components=5.5]
+2025-05-21 12:06:30,826 INFO o.j.r.PluginManagerCMD: Params line is: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx
+2025-05-21 12:06:30,930 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-05-21 12:06:30,937 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-05-21 12:06:30,939 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-05-21 12:06:30,952 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2025-05-21 12:06:30,954 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-05-21 12:06:30,961 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 12:06:30,961 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 12:06:30,961 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 12:06:30,961 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 12:06:30,962 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-05-21 12:06:30,962 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-05-21 12:06:30,983 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2025-05-21 12:06:31,015 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/jmeter.out
+[2025-05-21 12:06:31,016 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/jmeter.err
+[2025-05-21 12:06:31,017 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2025-05-21 12:06:31,017 DEBUG root] Importing module: bzt.modules.reporting
+[2025-05-21 12:06:31,020 DEBUG pyvirtualdisplay] version=3.0
+[2025-05-21 12:06:31,021 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py'>
+[2025-05-21 12:06:31,021 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2025-05-21 12:06:31,021 DEBUG root] Importing module: bzt.modules.console
+[2025-05-21 12:06:31,021 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/console.py'>
+[2025-05-21 12:06:31,022 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2025-05-21 12:06:31,022 DEBUG Engine] Module config: junit-xml {'class': 'bzt.modules.reporting.JUnitXMLReporter'}
+[2025-05-21 12:06:31,022 DEBUG root] Importing module: bzt.modules.reporting
+[2025-05-21 12:06:31,022 DEBUG root] Loading class: 'JUnitXMLReporter' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py'>
+[2025-05-21 12:06:31,022 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader', 'token': '********'}
+[2025-05-21 12:06:31,022 DEBUG root] Importing module: bzt.modules.blazemeter
+[2025-05-21 12:06:31,022 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/blazemeter/__init__.py'>
+[2025-05-21 12:06:31,025 DEBUG Engine.blazemeter] Installing http client
+[2025-05-21 12:06:31,025 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2025-05-21 12:06:31,025 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/version
+[2025-05-21 12:06:31,026 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2025-05-21 12:06:32,758 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 282
+[2025-05-21 12:06:32,760 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "BACKEND-CI/release-2025-05-06 3 release-2025-05-06 365b934a793c477da245a016652dac38495d8ea0 Fri May 16 08:34:10 2025 +0530 365b934a793c477da245a016652dac38495d8ea0\n",
+    "request_id": "682debf8881
+[2025-05-21 12:06:32,760 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2025-05-21 12:06:32,761 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/accounts
+[2025-05-21 12:06:33,129 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 4468
+[2025-05-21 12:06:33,132 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 2128512,
+            "name": "Default Account",
+            "thumbnailUrl": null,
+            "salesforceId": null,
+            "totangoId": null,
+            "apiKeyExp
+[2025-05-21 12:06:33,135 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=2128512&enabled=true&limit=100&skip=0 None
+[2025-05-21 12:06:33,137 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=2128512&enabled=true&limit=100&skip=0
+[2025-05-21 12:06:33,435 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=2128512&enabled=true&limit=100&skip=0 HTTP/1.1" 200 843
+[2025-05-21 12:06:33,438 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 2204081,
+            "name": "Default workspace",
+            "userId": 2653544,
+            "created": 1747159429,
+            "updated": 1747329242,
+            "enabl
+[2025-05-21 12:06:33,440 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=2129246&enabled=true&limit=100&skip=0 None
+[2025-05-21 12:06:33,440 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/workspaces?accountId=2129246&enabled=true&limit=100&skip=0
+[2025-05-21 12:06:33,762 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=2129246&enabled=true&limit=100&skip=0 HTTP/1.1" 200 839
+[2025-05-21 12:06:33,764 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 2204826,
+            "name": "Default workspace",
+            "userId": 2654433,
+            "created": 1747328838,
+            "updated": 1747328840,
+            "enabl
+[2025-05-21 12:06:33,765 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/projects?workspaceId=2204081&name=API+Testing&limit=100&skip=0 None
+[2025-05-21 12:06:33,765 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/projects?workspaceId=2204081&name=API+Testing&limit=100&skip=0
+[2025-05-21 12:06:35,302 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.16.41&installID=linux-d1044670b7c HTTP/1.1" 500 1096
+[2025-05-21 12:06:35,303 DEBUG Engine] Failed to check for updates, server returned 5xx NoneType: None
+
+[2025-05-21 12:06:35,303 WARNING Engine] Failed to check for updates, server returned 5xx.
+[2025-05-21 12:06:35,473 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/projects?workspaceId=2204081&name=API+Testing&limit=100&skip=0 HTTP/1.1" 200 468
+[2025-05-21 12:06:35,474 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 2516430,
+            "name": "API Testing",
+            "userId": 2654433,
+            "description": null,
+            "created": 1747761885,
+            "updated": 174
+[2025-05-21 12:06:35,474 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/projects?workspaceId=2204826&name=API+Testing&limit=100&skip=0 None
+[2025-05-21 12:06:35,474 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/projects?workspaceId=2204826&name=API+Testing&limit=100&skip=0
+[2025-05-21 12:06:35,808 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/projects?workspaceId=2204826&name=API+Testing&limit=100&skip=0 HTTP/1.1" 200 183
+[2025-05-21 12:06:35,808 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [],
+    "request_id": "682debfb84387",
+    "cached": false,
+    "limit": 100,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0
+}
+[2025-05-21 12:06:35,809 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?projectId=2516430&name=API+Test+v1&limit=100&skip=0 None
+[2025-05-21 12:06:35,809 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/tests?projectId=2516430&name=API+Test+v1&limit=100&skip=0
+[2025-05-21 12:06:36,127 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?projectId=2516430&name=API+Test+v1&limit=100&skip=0 HTTP/1.1" 200 883
+[2025-05-21 12:06:36,130 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 14795267,
+            "name": "API Test v1",
+            "isNewTest": false,
+            "userId": 2654433,
+            "created": 1747762799,
+            "updated": 174
+[2025-05-21 12:06:36,132 INFO Engine.blazemeter] Sending of engine metrics to happysocks is disabled. modules.blazemeter.happysocks-address setting was not provided
+[2025-05-21 12:06:36,140 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.yml
+[2025-05-21 12:06:36,156 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.json
+[2025-05-21 12:06:36,157 INFO Engine] Starting...
+[2025-05-21 12:06:36,158 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f64832ba290>
+[2025-05-21 12:06:36,158 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7f64832bbb50>
+[2025-05-21 12:06:36,158 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f64807d8f10>
+[2025-05-21 12:06:36,158 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f6435263d30>
+[2025-05-21 12:06:36,159 INFO Engine.console] Waiting for results...
+[2025-05-21 12:06:36,159 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f6442a57c40>
+[2025-05-21 12:06:36,159 DEBUG Engine] Startup <bzt.modules.reporting.JUnitXMLReporter object at 0x7f6442a57ca0>
+[2025-05-21 12:06:36,159 DEBUG Engine] Startup <bzt.modules.blazemeter.blazemeter_reporter.BlazeMeterUploader object at 0x7f6442a57d00>
+[2025-05-21 12:06:36,160 INFO Engine.blazemeter] Initiating data feeding...
+[2025-05-21 12:06:36,160 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/tests/14795267/start-external b'{"concurrency": 42, "duration": 1}'
+[2025-05-21 12:06:36,160 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/tests/14795267/start-external
+[2025-05-21 12:06:36,639 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/14795267/start-external HTTP/1.1" 202 3576
+[2025-05-21 12:06:36,642 DEBUG User] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "warning": "",
+        "session": {
+            "id": "r-ext682debfc3f15e607460409",
+            "name": "API Test v1",
+            "userId": 2654433,
+            "offset": 0,
+            "
+[2025-05-21 12:06:36,646 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/sessions/r-ext682debfc3f15e607460409 {
+ "name": "API Performance Test 1"
+}
+[2025-05-21 12:06:36,647 DEBUG HTTPClient] Making HTTP request PATCH https://a.blazemeter.com/api/v4/sessions/r-ext682debfc3f15e607460409
+[2025-05-21 12:06:37,020 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/sessions/r-ext682debfc3f15e607460409 HTTP/1.1" 200 1460
+[2025-05-21 12:06:37,021 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext682debfc3f15e607460409",
+        "name": "API Performance Test 1",
+        "userId": 2654433,
+        "offset": 0,
+        "statusCode": 15,
+        "status": "INITIALIZING",
+  
+[2025-05-21 12:06:37,021 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/#/masters/77996269
+[2025-05-21 12:06:37,688 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7f64832bbd60>
+[2025-05-21 12:06:37,689 DEBUG Engine.local] Delay setup for jmeter/api-test: 0(start-at) + 0(delay) = 0
+[2025-05-21 12:06:37,690 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.yml
+[2025-05-21 12:06:37,696 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.json
+[2025-05-21 12:06:37,697 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2025-05-21 12:06:37,697 DEBUG root] Leveled up log file verbosity
+[2025-05-21 12:06:37,697 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/GRACEFUL
+[2025-05-21 12:06:37,697 DEBUG root] Executing shell: ['/home/lucas/.bzt/jmeter-taurus/5.5/bin/jmeter.sh', '-t', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx', '-j', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/jmeter.log', '-q', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/jmeter-bzt.properties', '-n', '-S', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/system.properties'] at /mnt/d/Universidad/recursos/taurus api/test
+[2025-05-21 12:06:37,699 DEBUG Engine.local] Starting execution: jmeter/api-test, rest of available slots: 9223372036854775806
+[2025-05-21 12:06:37,699 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2025-05-21 12:06:37,904 INFO Engine.console] Waiting for finish...
+[2025-05-21 12:06:45,931 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2025-05-21 12:06:53,853 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 17s
+[2025-05-21 12:07:15,910 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 49s
+[2025-05-21 12:07:39,850 WARNING Engine] Please wait for graceful shutdown...
+[2025-05-21 12:07:39,852 DEBUG root] Leveled up log file verbosity
+[2025-05-21 12:07:39,853 DEBUG urwid.display.curses.Screen.draw_screen] Drawing screen with size (188, 49)
+[2025-05-21 12:07:39,852 INFO Engine] Shutting down...
+[2025-05-21 12:07:39,854 DEBUG Engine] Current stop reason: None
+[2025-05-21 12:07:39,855 DEBUG Engine.local] Shutdown jmeter/api-test
+[2025-05-21 12:07:39,855 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>}
+[2025-05-21 12:07:39,858 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.yml
+[2025-05-21 12:07:39,864 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.json
+[2025-05-21 12:07:39,865 INFO Engine] Post-processing...
+[2025-05-21 12:07:39,865 DEBUG Engine.local] Post-process jmeter/api-test
+[2025-05-21 12:07:39,866 DEBUG Engine] Add existing artifact (move=True): /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx
+[2025-05-21 12:07:39,866 DEBUG Engine] No need to copy /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/modified_requests.jmx
+[2025-05-21 12:07:39,867 DEBUG Engine.jmeter.JTLReader] Buffer len: 34; Known errors count: 0
+[2025-05-21 12:07:39,867 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840004, 34 in buffer
+[2025-05-21 12:07:39,867 DEBUG aggregator] Growing HDR from 10000.0 to 12000.0
+[2025-05-21 12:07:39,867 DEBUG aggregator] Growing HDR from 12000.0 to 13000.0
+[2025-05-21 12:07:39,869 DEBUG aggregator] Growing HDR from 10000.0 to 13000.0
+[2025-05-21 12:07:39,869 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840005, 33 in buffer
+[2025-05-21 12:07:39,869 DEBUG aggregator] Growing HDR from 13000.0 to 15000.0
+[2025-05-21 12:07:39,871 DEBUG aggregator] Growing HDR from 13000.0 to 15000.0
+[2025-05-21 12:07:39,871 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840006, 32 in buffer
+[2025-05-21 12:07:39,872 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840007, 31 in buffer
+[2025-05-21 12:07:39,873 DEBUG aggregator] Growing HDR from 13000.0 to 14000.0
+[2025-05-21 12:07:39,873 DEBUG aggregator] Growing HDR from 14000.0 to 15000.0
+[2025-05-21 12:07:39,873 DEBUG aggregator] Growing HDR from 15000.0 to 17000.0
+[2025-05-21 12:07:39,874 DEBUG aggregator] Growing HDR from 13000.0 to 15000.0
+[2025-05-21 12:07:39,874 DEBUG aggregator] Growing HDR from 15000.0 to 17000.0
+[2025-05-21 12:07:39,875 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840008, 30 in buffer
+[2025-05-21 12:07:39,876 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840009, 29 in buffer
+[2025-05-21 12:07:39,876 DEBUG aggregator] Growing HDR from 17000.0 to 18000.0
+[2025-05-21 12:07:39,876 DEBUG aggregator] Growing HDR from 17000.0 to 18000.0
+[2025-05-21 12:07:39,877 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840010, 28 in buffer
+[2025-05-21 12:07:39,877 DEBUG aggregator] Growing HDR from 15000.0 to 16000.0
+[2025-05-21 12:07:39,878 DEBUG aggregator] Growing HDR from 15000.0 to 16000.0
+[2025-05-21 12:07:39,878 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840011, 27 in buffer
+[2025-05-21 12:07:39,879 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840012, 26 in buffer
+[2025-05-21 12:07:39,879 DEBUG aggregator] Growing HDR from 16000.0 to 18000.0
+[2025-05-21 12:07:39,880 DEBUG aggregator] Growing HDR from 18000.0 to 19000.0
+[2025-05-21 12:07:39,880 DEBUG aggregator] Growing HDR from 16000.0 to 18000.0
+[2025-05-21 12:07:39,881 DEBUG aggregator] Growing HDR from 18000.0 to 19000.0
+[2025-05-21 12:07:39,881 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840013, 25 in buffer
+[2025-05-21 12:07:39,881 DEBUG aggregator] Growing HDR from 19000.0 to 20000.0
+[2025-05-21 12:07:39,881 DEBUG aggregator] Growing HDR from 19000.0 to 20000.0
+[2025-05-21 12:07:39,882 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840014, 24 in buffer
+[2025-05-21 12:07:39,882 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840015, 23 in buffer
+[2025-05-21 12:07:39,883 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840016, 22 in buffer
+[2025-05-21 12:07:39,883 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840017, 21 in buffer
+[2025-05-21 12:07:39,884 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840018, 20 in buffer
+[2025-05-21 12:07:39,884 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840019, 19 in buffer
+[2025-05-21 12:07:39,885 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840020, 18 in buffer
+[2025-05-21 12:07:39,885 DEBUG aggregator] Growing HDR from 20000.0 to 21000.0
+[2025-05-21 12:07:39,885 DEBUG aggregator] Growing HDR from 20000.0 to 21000.0
+[2025-05-21 12:07:39,885 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840021, 17 in buffer
+[2025-05-21 12:07:39,886 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840023, 16 in buffer
+[2025-05-21 12:07:39,886 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840024, 15 in buffer
+[2025-05-21 12:07:39,887 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840025, 14 in buffer
+[2025-05-21 12:07:39,887 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840026, 13 in buffer
+[2025-05-21 12:07:39,888 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840028, 12 in buffer
+[2025-05-21 12:07:39,888 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840029, 11 in buffer
+[2025-05-21 12:07:39,889 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840030, 10 in buffer
+[2025-05-21 12:07:39,889 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840031, 9 in buffer
+[2025-05-21 12:07:39,889 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840034, 8 in buffer
+[2025-05-21 12:07:39,890 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840035, 7 in buffer
+[2025-05-21 12:07:39,890 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840036, 6 in buffer
+[2025-05-21 12:07:39,891 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840037, 5 in buffer
+[2025-05-21 12:07:39,891 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840041, 4 in buffer
+[2025-05-21 12:07:39,892 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840042, 3 in buffer
+[2025-05-21 12:07:39,892 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840043, 2 in buffer
+[2025-05-21 12:07:39,893 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747840045, 1 in buffer
+[2025-05-21 12:07:39,894 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 0
+[2025-05-21 12:07:39,894 DEBUG Engine.consolidator] Consolidator buffer[36]: dict_keys([1747840002, 1747840003, 1747840004, 1747840005, 1747840006, 1747840007, 1747840008, 1747840009, 1747840010, 1747840011, 1747840012, 1747840013, 1747840014, 1747840015, 1747840016, 1747840017, 1747840018, 1747840019, 1747840020, 1747840021, 1747840023, 1747840024, 1747840025, 1747840026, 1747840028, 1747840029, 1747840030, 1747840031, 1747840034, 1747840035, 1747840036, 1747840037, 1747840041, 1747840042, 1747840043, 1747840045])
+[2025-05-21 12:07:39,894 DEBUG Engine.consolidator] Merging into 1747840002
+[2025-05-21 12:07:39,894 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:39,895 DEBUG aggregator] Growing HDR from 8000.0 to 10000.0
+[2025-05-21 12:07:39,895 DEBUG aggregator] Growing HDR from 10000.0 to 11000.0
+[2025-05-21 12:07:39,912 DEBUG Engine.consolidator] Processed datapoint: 1747840002/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:39,912 DEBUG Engine.consolidator] Merging into 1747840003
+[2025-05-21 12:07:39,912 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:39,912 DEBUG aggregator] Growing HDR from 11000.0 to 13000.0
+[2025-05-21 12:07:39,928 DEBUG Engine.consolidator] Processed datapoint: 1747840003/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:39,929 DEBUG Engine.consolidator] Merging into 1747840004
+[2025-05-21 12:07:39,929 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:39,929 DEBUG aggregator] Growing HDR from 10000.0 to 13000.0
+[2025-05-21 12:07:39,946 DEBUG Engine.consolidator] Processed datapoint: 1747840004/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:39,946 DEBUG Engine.consolidator] Merging into 1747840005
+[2025-05-21 12:07:39,946 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:39,947 DEBUG aggregator] Growing HDR from 13000.0 to 15000.0
+[2025-05-21 12:07:39,963 DEBUG Engine.consolidator] Processed datapoint: 1747840005/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:39,963 DEBUG Engine.consolidator] Merging into 1747840006
+[2025-05-21 12:07:39,964 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:39,980 DEBUG Engine.consolidator] Processed datapoint: 1747840006/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:39,980 DEBUG Engine.consolidator] Merging into 1747840007
+[2025-05-21 12:07:39,980 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:39,981 DEBUG aggregator] Growing HDR from 13000.0 to 15000.0
+[2025-05-21 12:07:39,981 DEBUG aggregator] Growing HDR from 15000.0 to 17000.0
+[2025-05-21 12:07:39,998 DEBUG Engine.consolidator] Processed datapoint: 1747840007/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:39,998 DEBUG Engine.consolidator] Merging into 1747840008
+[2025-05-21 12:07:39,998 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,015 DEBUG Engine.consolidator] Processed datapoint: 1747840008/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,015 DEBUG Engine.consolidator] Merging into 1747840009
+[2025-05-21 12:07:40,015 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,015 DEBUG aggregator] Growing HDR from 17000.0 to 18000.0
+[2025-05-21 12:07:40,033 DEBUG Engine.consolidator] Processed datapoint: 1747840009/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,033 DEBUG Engine.consolidator] Merging into 1747840010
+[2025-05-21 12:07:40,033 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,034 DEBUG aggregator] Growing HDR from 15000.0 to 16000.0
+[2025-05-21 12:07:40,051 DEBUG Engine.consolidator] Processed datapoint: 1747840010/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,051 DEBUG Engine.consolidator] Merging into 1747840011
+[2025-05-21 12:07:40,051 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,068 DEBUG Engine.consolidator] Processed datapoint: 1747840011/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,068 DEBUG Engine.consolidator] Merging into 1747840012
+[2025-05-21 12:07:40,069 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,069 DEBUG aggregator] Growing HDR from 16000.0 to 18000.0
+[2025-05-21 12:07:40,069 DEBUG aggregator] Growing HDR from 18000.0 to 19000.0
+[2025-05-21 12:07:40,086 DEBUG Engine.consolidator] Processed datapoint: 1747840012/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,087 DEBUG Engine.consolidator] Merging into 1747840013
+[2025-05-21 12:07:40,087 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,087 DEBUG aggregator] Growing HDR from 19000.0 to 20000.0
+[2025-05-21 12:07:40,104 DEBUG Engine.consolidator] Processed datapoint: 1747840013/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,104 DEBUG Engine.consolidator] Merging into 1747840014
+[2025-05-21 12:07:40,105 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,122 DEBUG Engine.consolidator] Processed datapoint: 1747840014/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,122 DEBUG Engine.consolidator] Merging into 1747840015
+[2025-05-21 12:07:40,122 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,139 DEBUG Engine.consolidator] Processed datapoint: 1747840015/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,139 DEBUG Engine.consolidator] Merging into 1747840016
+[2025-05-21 12:07:40,139 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,156 DEBUG Engine.consolidator] Processed datapoint: 1747840016/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,157 DEBUG Engine.consolidator] Merging into 1747840017
+[2025-05-21 12:07:40,157 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,174 DEBUG Engine.consolidator] Processed datapoint: 1747840017/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,174 DEBUG Engine.consolidator] Merging into 1747840018
+[2025-05-21 12:07:40,174 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,192 DEBUG Engine.consolidator] Processed datapoint: 1747840018/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,192 DEBUG Engine.consolidator] Merging into 1747840019
+[2025-05-21 12:07:40,192 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,209 DEBUG Engine.consolidator] Processed datapoint: 1747840019/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,209 DEBUG Engine.consolidator] Merging into 1747840020
+[2025-05-21 12:07:40,210 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,210 DEBUG aggregator] Growing HDR from 20000.0 to 21000.0
+[2025-05-21 12:07:40,228 DEBUG Engine.consolidator] Processed datapoint: 1747840020/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,229 DEBUG Engine.consolidator] Merging into 1747840021
+[2025-05-21 12:07:40,229 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,247 DEBUG Engine.consolidator] Processed datapoint: 1747840021/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,247 DEBUG Engine.consolidator] Merging into 1747840023
+[2025-05-21 12:07:40,247 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,264 DEBUG Engine.consolidator] Processed datapoint: 1747840023/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,264 DEBUG Engine.consolidator] Merging into 1747840024
+[2025-05-21 12:07:40,265 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,282 DEBUG Engine.consolidator] Processed datapoint: 1747840024/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,282 DEBUG Engine.consolidator] Merging into 1747840025
+[2025-05-21 12:07:40,282 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,300 DEBUG Engine.consolidator] Processed datapoint: 1747840025/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,300 DEBUG Engine.consolidator] Merging into 1747840026
+[2025-05-21 12:07:40,300 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,318 DEBUG Engine.consolidator] Processed datapoint: 1747840026/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,319 DEBUG Engine.consolidator] Merging into 1747840028
+[2025-05-21 12:07:40,319 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,336 DEBUG Engine.consolidator] Processed datapoint: 1747840028/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,336 DEBUG Engine.consolidator] Merging into 1747840029
+[2025-05-21 12:07:40,336 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,353 DEBUG Engine.consolidator] Processed datapoint: 1747840029/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,353 DEBUG Engine.consolidator] Merging into 1747840030
+[2025-05-21 12:07:40,353 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,371 DEBUG Engine.consolidator] Processed datapoint: 1747840030/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,371 DEBUG Engine.consolidator] Merging into 1747840031
+[2025-05-21 12:07:40,371 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,388 DEBUG Engine.consolidator] Processed datapoint: 1747840031/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,388 DEBUG Engine.consolidator] Merging into 1747840034
+[2025-05-21 12:07:40,389 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,406 DEBUG Engine.consolidator] Processed datapoint: 1747840034/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,406 DEBUG Engine.consolidator] Merging into 1747840035
+[2025-05-21 12:07:40,407 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,424 DEBUG Engine.consolidator] Processed datapoint: 1747840035/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,424 DEBUG Engine.consolidator] Merging into 1747840036
+[2025-05-21 12:07:40,424 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,441 DEBUG Engine.consolidator] Processed datapoint: 1747840036/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,442 DEBUG Engine.consolidator] Merging into 1747840037
+[2025-05-21 12:07:40,442 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,459 DEBUG Engine.consolidator] Processed datapoint: 1747840037/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,459 DEBUG Engine.consolidator] Merging into 1747840041
+[2025-05-21 12:07:40,459 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,476 DEBUG Engine.consolidator] Processed datapoint: 1747840041/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,476 DEBUG Engine.consolidator] Merging into 1747840042
+[2025-05-21 12:07:40,476 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,493 DEBUG Engine.consolidator] Processed datapoint: 1747840042/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,493 DEBUG Engine.consolidator] Merging into 1747840043
+[2025-05-21 12:07:40,493 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,510 DEBUG Engine.consolidator] Processed datapoint: 1747840043/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,510 DEBUG Engine.consolidator] Merging into 1747840045
+[2025-05-21 12:07:40,510 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 12:07:40,527 DEBUG Engine.consolidator] Processed datapoint: 1747840045/ConsolidatingAggregator@140069674138448
+[2025-05-21 12:07:40,527 INFO Engine.final-stats] Test duration: 0:01:03
+[2025-05-21 12:07:40,527 INFO Engine.final-stats] Samples count: 126, 0.00% failures
+[2025-05-21 12:07:40,527 INFO Engine.final-stats] Average times: total 13.239, latency 13.046, connect 0.000
+[2025-05-21 12:07:40,528 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |         0.303 |
+|          50.0 |        14.592 |
+|          90.0 |        19.904 |
+|          95.0 |        21.024 |
+|          99.0 |        27.344 |
+|          99.9 |        28.368 |
+|         100.0 |        28.368 |
++---------------+---------------+
+[2025-05-21 12:07:40,528 INFO Engine.final-stats] Request label stats:
++---------------+--------+---------+--------+-------+
+| label         | status |    succ | avg_rt | error |
++---------------+--------+---------+--------+-------+
+| get-customers |   OK   | 100.00% | 16.808 |       |
+| get-inventory |   OK   | 100.00% | 10.775 |       |
+| get-movies    |   OK   | 100.00% | 12.132 |       |
++---------------+--------+---------+--------+-------+
+[2025-05-21 12:07:40,528 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2025-05-21 12:07:40,528 INFO Engine.final-stats] Test duration: 0:01:03
+[2025-05-21 12:07:40,529 INFO Engine.final-stats] Samples count: 126, 0.00% failures
+[2025-05-21 12:07:40,529 INFO Engine.final-stats] Average times: total 13.239, latency 13.046, connect 0.000
+[2025-05-21 12:07:40,529 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |         0.303 |
+|          50.0 |        14.592 |
+|          90.0 |        19.904 |
+|          95.0 |        21.024 |
+|          99.0 |        27.344 |
+|          99.9 |        28.368 |
+|         100.0 |        28.368 |
++---------------+---------------+
+[2025-05-21 12:07:40,529 INFO Engine.final-stats] Request label stats:
++---------------+--------+---------+--------+-------+
+| label         | status |    succ | avg_rt | error |
++---------------+--------+---------+--------+-------+
+| get-customers |   OK   | 100.00% | 16.808 |       |
+| get-inventory |   OK   | 100.00% | 10.775 |       |
+| get-movies    |   OK   | 100.00% | 12.132 |       |
++---------------+--------+---------+--------+-------+
+[2025-05-21 12:07:40,530 INFO Engine.final-stats] Dumping final status as CSV: ./test/reports/perf_result_csv.csv
+[2025-05-21 12:07:40,581 DEBUG Engine.junit-xml] Processing passfail objects: []
+[2025-05-21 12:07:40,583 WARNING Engine.XUnitFileWriter] File ./test/reports/junit-result.xml already exists, it will be overwritten
+[2025-05-21 12:07:40,583 INFO Engine.XUnitFileWriter] Writing JUnit XML report into: ./test/reports/junit-result.xml
+[2025-05-21 12:07:40,586 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 40
+[2025-05-21 12:07:40,586 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2025-05-21 12:07:40,996 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext682debfc3f15e607460409&signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&test_id=14795267&user_id=2654433&pq=0&target=labels_bulk&update=1 b'{\n "labels": [\n  {\n   "n": 126,\n   "name": "ALL",\n   "interval": 1,\n   "intervals": [\n    {\n     "ec": 0,\n     "ts": 1747839998,\n     "na": 42,\n     "n": 9,\n     "failed": 0,\n     "rc": [\n      {\n       "n": 9,\n       "f": [],\n       "rc": "200"\n      }\n  '
+[2025-05-21 12:07:40,997 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/submit.php?session_id=r-ext682debfc3f15e607460409&signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&test_id=14795267&user_id=2654433&pq=0&target=labels_bulk&update=1
+[2025-05-21 12:07:43,948 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /submit.php?session_id=r-ext682debfc3f15e607460409&signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&test_id=14795267&user_id=2654433&pq=0&target=labels_bulk&update=1 HTTP/1.1" 200 161
+[2025-05-21 12:07:43,949 DEBUG User] Response [200]: {"api_version":2,"error":null,"result":{"session":{"_id":"r-ext682debfc3f15e607460409","name":"API Performance Test 1","statusCode":15,"status":"INITIALIZING"}}}
+[2025-05-21 12:07:43,957 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 b'--===============2045794936516126737==\r\nContent-Disposition: file; name="file"; filename="r-ext682debfc3f15e607460409-0-c.monitoring.json"\r\nContent-Type: application/json\r\n\r\n{\n "reportInfo": {\n  "sessionId": "r-ext682debfc3f15e607460409",\n  "timestamp": 17'
+[2025-05-21 12:07:43,957 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269
+[2025-05-21 12:07:44,907 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 HTTP/1.1" 200 180
+[2025-05-21 12:07:44,910 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-ext682debfc3f15e607460409-0-c.monitoring.json"
+    ],
+    "request_id": "682dec4028650",
+    "cached": false
+}
+[2025-05-21 12:07:44,962 INFO Engine.blazemeter] Uploading all artifacts as artifacts.zip ...
+[2025-05-21 12:07:44,963 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 b'--===============3490308475734578559==\r\nContent-Disposition: file; name="file"; filename="artifacts.zip"\r\nContent-Type: application/zip\r\n\r\nPK\x03\x04\x14\x00\x00\x00\x08\x00\xce`\xb5Z0\xa2\xcd\x8f\xc6\x04\x00\x00;\n\x00\x00\x07\x00\x00\x00.bzt-rc}V\xdbn\xe36\x10}\xf7W\x0c\x1c\x18i\x81\xc8\x96|I\x1c\xa1]\xa0\x17 \xbb\x8bn\xb1\xe8\xeeK\x9f\x16\x944\xb2\x99H\xa4*\x92I\x9c\xa2\xfd\xf6\xce\x90\xa2lg\xd1\x95\x1fL\rg\xce\x0c\xcf\\\xa8\x0b\xb8C\x85\xbdh\xe0\x13Z+\xd5\xceL&\x17fX'
+[2025-05-21 12:07:44,963 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269
+[2025-05-21 12:07:46,029 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 HTTP/1.1" 200 146
+[2025-05-21 12:07:46,033 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip"
+    ],
+    "request_id": "682dec4127db3",
+    "cached": false
+}
+[2025-05-21 12:07:46,035 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 b'--===============4740077822921337867==\r\nContent-Disposition: file; name="file"; filename="artifacts.zip.tail.bz"\r\nContent-Type: application/octet-stream\r\n\r\n2.558K .bzt-rc\n52.32K bzt.log\n6.997K effective.json\n5.675K effective.yml\n83  error.jtl\n434  jmeter-b'
+[2025-05-21 12:07:46,036 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269
+[2025-05-21 12:07:47,017 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 HTTP/1.1" 200 154
+[2025-05-21 12:07:47,018 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip.tail.bz"
+    ],
+    "request_id": "682dec420aebf",
+    "cached": false
+}
+[2025-05-21 12:07:47,019 INFO Engine.blazemeter] Uploading /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/bzt.log
+[2025-05-21 12:07:47,029 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 b'--===============9029295421320344736==\r\nContent-Disposition: file; name="file"; filename="bzt.log"\r\nContent-Type: application/octet-stream\r\n\r\n[2025-05-21 12:06:29,546 INFO root] Taurus CLI Tool v1.16.41\n[2025-05-21 12:06:29,546 DEBUG root] Build: 14685 Mon'
+[2025-05-21 12:07:47,030 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269
+[2025-05-21 12:07:48,157 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 HTTP/1.1" 200 140
+[2025-05-21 12:07:48,160 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log"
+    ],
+    "request_id": "682dec435dab7",
+    "cached": false
+}
+[2025-05-21 12:07:48,165 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 b'--===============3595602740057229318==\r\nContent-Disposition: file; name="file"; filename="bzt.log.tail.bz"\r\nContent-Type: application/octet-stream\r\n\r\n[2025-05-21 12:07:46,029 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image'
+[2025-05-21 12:07:48,166 DEBUG HTTPClient] Making HTTP request POST https://data.blazemeter.com/api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269
+[2025-05-21 12:07:48,892 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext682debfc3f15e607460409/files?signature=ci1leHQ2ODJkZWJmYzNmMTVlNjA3NDYwNDA5OjE3NDkwNDk1OTY6ZjQ3Y2YxZThkM2I2NGRhODhiNjBkYmVlZmM0ZjE4Mjg2NTMzZTgxZjRlM2UwZDRhZjM2YTc5Yzk4MWMwZWQyMjczMDI5Y2JmNDcyZWUwMTY5NmFjZjRhYzEyYmJlZGViODAwNWZiNzk4NmJlNDQ5NTJlMGYzNWIwYmZkYjUzYjU=&masterId=77996269 HTTP/1.1" 200 148
+[2025-05-21 12:07:48,894 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log.tail.bz"
+    ],
+    "request_id": "682dec4428193",
+    "cached": false
+}
+[2025-05-21 12:07:48,895 DEBUG Engine.blazemeter] Set last check time to: 1747839991.022925
+[2025-05-21 12:07:48,896 INFO Engine.blazemeter] Ending data feeding...
+[2025-05-21 12:07:48,897 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext682debfc3f15e607460409/stop None
+[2025-05-21 12:07:48,897 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions/r-ext682debfc3f15e607460409/stop
+[2025-05-21 12:07:49,322 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions/r-ext682debfc3f15e607460409/stop HTTP/1.1" 202 125
+[2025-05-21 12:07:49,325 DEBUG User] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": "Stopping",
+    "request_id": "682dec44d7c47",
+    "cached": false
+}
+[2025-05-21 12:07:49,327 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/#/masters/77996269
+[2025-05-21 12:07:49,332 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.yml
+[2025-05-21 12:07:49,346 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/effective.json
+[2025-05-21 12:07:49,347 INFO root] Artifacts dir: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074
+[2025-05-21 12:07:49,348 INFO root] Done performing with code: 0
+[2025-05-21 12:07:49,348 DEBUG root] Closing log handler: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_12-06-29.579074/bzt.log

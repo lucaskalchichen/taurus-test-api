@@ -1,0 +1,331 @@
+[2025-05-21 11:48:28,021 INFO root] Taurus CLI Tool v1.16.41
+[2025-05-21 11:48:28,021 DEBUG root] Build: 14685 Mon Apr 28 12:12:54 UTC 2025
+[2025-05-21 11:48:28,021 DEBUG root] Extended git info:  7331a7e5 Release 1.16.41
+[2025-05-21 11:48:28,021 DEBUG root] Command-line options: {'log': '/tmp/bzt_103i0i7r.log', 'option': None, 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2025-05-21 11:48:28,021 DEBUG root] Python: CPython 3.10.12
+[2025-05-21 11:48:28,021 DEBUG root] OS: uname_result(system='Linux', node='kalchi-pc', release='5.15.167.4-microsoft-standard-WSL2', version='#1 SMP Tue Nov 5 00:21:55 UTC 2024', machine='x86_64')
+[2025-05-21 11:48:28,021 DEBUG root] Path to interpreter: /usr/bin/python3
+[2025-05-21 11:48:28,021 DEBUG root] Path to packages: ['/usr/local/bin', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages']
+[2025-05-21 11:48:28,021 DEBUG root] Default python: /home/lucas/.pyenv/shims/python
+[2025-05-21 11:48:28,021 DEBUG root] Default python3: /home/lucas/.pyenv/shims/python3
+[2025-05-21 11:48:28,021 DEBUG root] Using personal config: /home/lucas/.bzt-rc
+[2025-05-21 11:48:28,021 INFO root] Starting with configs: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 11:48:28,022 INFO Engine] Configuring...
+[2025-05-21 11:48:28,029 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.10/dist-packages/bzt/resources/10-base-config.yml']
+[2025-05-21 11:48:28,029 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.10/dist-packages/bzt/resources/10-base-config.yml']
+[2025-05-21 11:48:28,029 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.10/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2025-05-21 11:48:28,036 DEBUG Engine] User configs list: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 11:48:28,036 DEBUG Engine.Configuration] Configs: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 11:48:28,036 DEBUG Engine.Configuration] Reading /home/lucas/.bzt-rc as YAML
+[2025-05-21 11:48:28,044 DEBUG Engine.Configuration] Reading test-v1.yaml as YAML
+[2025-05-21 11:48:28,045 DEBUG Engine.Configuration] Configs: ['/home/lucas/.bzt-rc', 'test-v1.yaml']
+[2025-05-21 11:48:28,046 DEBUG Engine.Configuration] Reading /home/lucas/.bzt-rc as YAML
+[2025-05-21 11:48:28,047 DEBUG Engine.Configuration] Reading test-v1.yaml as YAML
+[2025-05-21 11:48:28,049 INFO HTTPClient] Proxy settings not set
+[2025-05-21 11:48:28,050 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.16.41&installID=linux-d1044670b7c
+[2025-05-21 11:48:28,050 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.16.41&installID=linux-d1044670b7c
+[2025-05-21 11:48:28,050 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2025-05-21 11:48:28,050 INFO Engine] Artifacts dir: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794
+[2025-05-21 11:48:28,052 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective
+[2025-05-21 11:48:28,053 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.yml
+[2025-05-21 11:48:28,079 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.json
+[2025-05-21 11:48:28,080 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/merged.yml
+[2025-05-21 11:48:28,081 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/merged.yml
+[2025-05-21 11:48:28,083 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/merged.json
+[2025-05-21 11:48:28,084 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/merged.json
+[2025-05-21 11:48:28,084 DEBUG Engine] Add existing artifact (move=False): /home/lucas/.bzt-rc
+[2025-05-21 11:48:28,084 DEBUG Engine] Copying /home/lucas/.bzt-rc to /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/.bzt-rc
+[2025-05-21 11:48:28,088 DEBUG Engine] Add existing artifact (move=False): test-v1.yaml
+[2025-05-21 11:48:28,089 DEBUG Engine] Copying test-v1.yaml to /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/test-v1.yaml
+[2025-05-21 11:48:28,093 DEBUG Engine] Set PYTHONPATH to :
+	CURRENT: '' +
+	TEMP: '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/python-packages/3.10.12' +
+	USER: '/home/lucas/.bzt/python-packages/3.10.12'
+[2025-05-21 11:48:28,093 DEBUG Engine] Content of user packages dir: []
+[2025-05-21 11:48:28,093 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2025-05-21 11:48:28,093 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794
+[2025-05-21 11:48:28,093 DEBUG root] Closing log handler: /tmp/bzt_103i0i7r.log
+[2025-05-21 11:48:28,097 DEBUG root] Switched writing logs to /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/bzt.log
+[2025-05-21 11:48:28,097 DEBUG root] Linting config
+[2025-05-21 11:48:28,098 INFO Engine] Preparing...
+[2025-05-21 11:48:28,098 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2025-05-21 11:48:28,098 DEBUG root] Importing module: bzt.modules.aggregator
+[2025-05-21 11:48:28,152 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/aggregator.py'>
+[2025-05-21 11:48:28,152 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2025-05-21 11:48:28,153 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2025-05-21 11:48:28,153 DEBUG root] Importing module: bzt.modules.monitoring
+[2025-05-21 11:48:28,153 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/monitoring.py'>
+[2025-05-21 11:48:28,154 INFO Engine.monitoring.LocalClient] Using StandardLocalMonitor for engine health monitoring
+[2025-05-21 11:48:28,155 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2025-05-21 11:48:28,155 DEBUG root] Importing module: bzt.modules.provisioning
+[2025-05-21 11:48:28,155 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/provisioning.py'>
+[2025-05-21 11:48:28,155 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler', 'mqtt': 'bzt.jmx.mqtt.MQTTProtocolHandler', 'grpc': 'bzt.jmx.grpc.GRPCProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': ''}}
+[2025-05-21 11:48:28,155 DEBUG root] Importing module: bzt.modules.jmeter
+[2025-05-21 11:48:28,169 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/jmeter.py'>
+[2025-05-21 11:48:28,169 DEBUG Engine.local] Preparing executor: jmeter/139636166826960
+[2025-05-21 11:48:28,169 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/jmeter.log
+[2025-05-21 11:48:28,169 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2025-05-21 11:48:28,178 DEBUG Engine.jmeter] Port 4445 is free
+[2025-05-21 11:48:28,178 DEBUG Engine.jmeter] Using port 4445 for management
+[2025-05-21 11:48:28,178 DEBUG Engine.jmeter] Getting Jmeter version.
+[2025-05-21 11:48:28,178 DEBUG Engine.jmeter] Autodetect version is enabled
+[2025-05-21 11:48:28,178 DEBUG Engine.jmeter] JMeter version: 5.5
+[2025-05-21 11:48:28,178 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/requests.jmx
+[2025-05-21 11:48:28,181 DEBUG root] Importing module: bzt.jmx.http
+[2025-05-21 11:48:28,182 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/lib/python3.10/dist-packages/bzt/jmx/http.py'>
+[2025-05-21 11:48:28,182 DEBUG root] Importing module: bzt.jmx.mqtt
+[2025-05-21 11:48:28,183 DEBUG root] Loading class: 'MQTTProtocolHandler' from <module 'bzt.jmx.mqtt' from '/usr/local/lib/python3.10/dist-packages/bzt/jmx/mqtt.py'>
+[2025-05-21 11:48:28,183 DEBUG root] Importing module: bzt.jmx.grpc
+[2025-05-21 11:48:28,183 DEBUG root] Loading class: 'GRPCProtocolHandler' from <module 'bzt.jmx.grpc' from '/usr/local/lib/python3.10/dist-packages/bzt/jmx/grpc.py'>
+[2025-05-21 11:48:28,184 DEBUG JMeterScenarioBuilder] Saving JMX to: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/requests.jmx
+[2025-05-21 11:48:28,187 DEBUG Engine.jmeter] Additional system properties {'sun.net.inetaddr.ttl': 0}
+[2025-05-21 11:48:28,187 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/system.properties
+[2025-05-21 11:48:28,189 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794:/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794'}
+[2025-05-21 11:48:28,189 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/jmeter-bzt.properties
+[2025-05-21 11:48:28,191 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2025-05-21 11:48:28,192 DEBUG root] Executing shell: ['java', '-version'] at .
+[2025-05-21 11:48:28,401 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "11.0.27" 2025-04-15
+OpenJDK Runtime Environment (build 11.0.27+6-post-Ubuntu-0ubuntu122.04)
+OpenJDK 64-Bit Server VM (build 11.0.27+6-post-Ubuntu-0ubuntu122.04, mixed mode, sharing)
+
+[2025-05-21 11:48:28,401 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2025-05-21 11:48:28,402 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2025-05-21 11:48:28,402 DEBUG root] Executing shell: ['/home/lucas/.bzt/jmeter-taurus/5.5/bin/jmeter.sh', '-j', '/tmp/jmeter_t4wqc9slog', '--version'] at .
+[2025-05-21 11:48:29,364 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) |
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.5
+
+Copyright (c) 1999-2022 The Apache Software Foundation
+
+ / 
+[2025-05-21 11:48:29,367 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/kpi.jtl
+[2025-05-21 11:48:29,368 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/error.jtl
+[2025-05-21 11:48:29,368 DEBUG Engine.jmeter.LoadSettingsProcessor] Load: LoadSpec(concurrency=42, throughput=None, ramp_up=3.0, hold=0, iterations=1, duration=3.0, steps=None)
+[2025-05-21 11:48:29,368 DEBUG Engine.jmeter.LoadSettingsProcessor] Thread group detection: iterations are found, regular ThreadGroup will be used
+[2025-05-21 11:48:29,369 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (api-test) to ThreadGroup and apply load parameters
+[2025-05-21 11:48:29,369 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx
+[2025-05-21 11:48:29,369 DEBUG JMX] Saving JMX to: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx
+[2025-05-21 11:48:29,370 DEBUG root] Executing shell: ['/home/lucas/.bzt/jmeter-taurus/5.5/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx'] at .
+[2025-05-21 11:48:32,563 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx
+2025-05-21 11:48:29,810 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2025-05-21 11:48:29,852 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=linux-7b1d0b8b3260c7adac26bddad9a05148-nongui
+2025-05-21 11:48:32,270 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.2, jpgc-casutg=3.1, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.10, jpgc-tst=2.6, jmeter-core=5.5, jmeter-ftp=5.5, jmeter-http=5.5, jmeter-jdbc=5.5, jmeter-jms=5.5, jmeter-junit=5.5, jmeter-java=5.5, jmeter-ldap=5.5, jmeter-mail=5.5, jmeter-mongodb=5.5, jmeter-native=5.5, jmeter-tcp=5.5, jmeter-components=5.5]
+2025-05-21 11:48:32,271 INFO o.j.r.PluginManagerCMD: Params line is: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx
+2025-05-21 11:48:32,427 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-05-21 11:48:32,436 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-05-21 11:48:32,438 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-05-21 11:48:32,472 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2025-05-21 11:48:32,473 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-05-21 11:48:32,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 11:48:32,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 11:48:32,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 11:48:32,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-21 11:48:32,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-05-21 11:48:32,485 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-05-21 11:48:32,541 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2025-05-21 11:48:32,563 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/jmeter.out
+[2025-05-21 11:48:32,564 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/jmeter.err
+[2025-05-21 11:48:32,565 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2025-05-21 11:48:32,565 DEBUG root] Importing module: bzt.modules.reporting
+[2025-05-21 11:48:32,581 DEBUG pyvirtualdisplay] version=3.0
+[2025-05-21 11:48:32,582 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py'>
+[2025-05-21 11:48:32,582 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2025-05-21 11:48:32,582 DEBUG root] Importing module: bzt.modules.console
+[2025-05-21 11:48:32,582 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/console.py'>
+[2025-05-21 11:48:32,582 WARNING Engine] Module 'console' can be only used once, will merge all new instances into single
+[2025-05-21 11:48:32,582 DEBUG Engine] Module config: junit-xml {'class': 'bzt.modules.reporting.JUnitXMLReporter'}
+[2025-05-21 11:48:32,582 DEBUG root] Importing module: bzt.modules.reporting
+[2025-05-21 11:48:32,583 DEBUG root] Loading class: 'JUnitXMLReporter' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py'>
+[2025-05-21 11:48:32,583 DEBUG Engine] Module config: blazemeter {'class': 'bzt.modules.blazemeter.BlazeMeterUploader'}
+[2025-05-21 11:48:32,583 DEBUG root] Importing module: bzt.modules.blazemeter
+[2025-05-21 11:48:32,583 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python3.10/dist-packages/bzt/modules/blazemeter/__init__.py'>
+[2025-05-21 11:48:32,586 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2025-05-21 11:48:32,586 DEBUG Engine.blazemeter] Installing http client
+[2025-05-21 11:48:32,586 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2025-05-21 11:48:32,586 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/web/version
+[2025-05-21 11:48:32,587 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com:443
+[2025-05-21 11:48:33,355 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 282
+[2025-05-21 11:48:33,356 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "BACKEND-CI/release-2025-05-06 3 release-2025-05-06 365b934a793c477da245a016652dac38495d8ea0 Fri May 16 08:34:10 2025 +0530 365b934a793c477da245a016652dac38495d8ea0\n",
+    "request_id": "682de7c124e
+[2025-05-21 11:48:33,357 INFO Engine.blazemeter] Sending of engine metrics to happysocks is disabled. modules.blazemeter.happysocks-address setting was not provided
+[2025-05-21 11:48:33,360 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.yml
+[2025-05-21 11:48:33,368 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.json
+[2025-05-21 11:48:33,370 INFO Engine] Starting...
+[2025-05-21 11:48:33,370 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7eff9561a320>
+[2025-05-21 11:48:33,370 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7eff9561b850>
+[2025-05-21 11:48:33,371 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7eff95654bb0>
+[2025-05-21 11:48:33,371 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7eff47d9bdf0>
+[2025-05-21 11:48:33,371 INFO Engine.console] Waiting for results...
+[2025-05-21 11:48:33,372 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7eff55b53d00>
+[2025-05-21 11:48:33,372 DEBUG Engine] Startup <bzt.modules.reporting.JUnitXMLReporter object at 0x7eff55b53d60>
+[2025-05-21 11:48:33,372 DEBUG Engine] Startup <bzt.modules.blazemeter.blazemeter_reporter.BlazeMeterUploader object at 0x7eff55b53dc0>
+[2025-05-21 11:48:33,372 INFO Engine.blazemeter] Initiating data feeding...
+[2025-05-21 11:48:33,373 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions b'{"concurrency": 42, "duration": 1}'
+[2025-05-21 11:48:33,373 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions
+[2025-05-21 11:48:33,713 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.16.41&installID=linux-d1044670b7c HTTP/1.1" 500 1096
+[2025-05-21 11:48:33,716 DEBUG Engine] Failed to check for updates, server returned 5xx NoneType: None
+
+[2025-05-21 11:48:33,717 WARNING Engine] Failed to check for updates, server returned 5xx.
+[2025-05-21 11:48:34,800 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions HTTP/1.1" 201 4541
+[2025-05-21 11:48:34,801 DEBUG User] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "warning": "Your external test, involving 42 users for 1 minutes, exceeds our anonymous plan limits, which allows for a maximum of 10 users and 5 minutes.",
+        "session": {
+           
+[2025-05-21 11:48:34,801 WARNING User] Your external test, involving 42 users for 1 minutes, exceeds our anonymous plan limits, which allows for a maximum of 10 users and 5 minutes.
+[2025-05-21 11:48:34,801 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/?public-token=Ie1DzOXdK4ePiFsZFcUsFUmOWrUE9YUPIKfnQkP6Qu3IqRQn8u#reports/r-ext-682de7c15db78230358725/summary
+[2025-05-21 11:48:35,480 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7eff9561bc40>
+[2025-05-21 11:48:35,481 DEBUG Engine.local] Delay setup for jmeter/api-test: 0(start-at) + 0(delay) = 0
+[2025-05-21 11:48:35,482 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.yml
+[2025-05-21 11:48:35,488 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.json
+[2025-05-21 11:48:35,488 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2025-05-21 11:48:35,489 DEBUG root] Leveled up log file verbosity
+[2025-05-21 11:48:35,489 DEBUG Engine] New artifact filename: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/GRACEFUL
+[2025-05-21 11:48:35,489 DEBUG root] Executing shell: ['/home/lucas/.bzt/jmeter-taurus/5.5/bin/jmeter.sh', '-t', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx', '-j', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/jmeter.log', '-q', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/jmeter-bzt.properties', '-n', '-S', '/mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/system.properties'] at /mnt/d/Universidad/recursos/taurus api/test
+[2025-05-21 11:48:35,491 DEBUG Engine.local] Starting execution: jmeter/api-test, rest of available slots: 9223372036854775806
+[2025-05-21 11:48:35,491 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2025-05-21 11:48:35,698 INFO Engine.console] Waiting for finish...
+[2025-05-21 11:48:39,540 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2025-05-21 11:48:41,522 WARNING Engine] Please wait for graceful shutdown...
+[2025-05-21 11:48:41,525 DEBUG root] Leveled up log file verbosity
+[2025-05-21 11:48:41,526 DEBUG urwid.display.curses.Screen.draw_screen] Drawing screen with size (188, 49)
+[2025-05-21 11:48:41,525 INFO Engine] Shutting down...
+[2025-05-21 11:48:41,527 DEBUG Engine] Current stop reason: None
+[2025-05-21 11:48:41,529 DEBUG Engine.local] Shutdown jmeter/api-test
+[2025-05-21 11:48:41,530 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>}
+[2025-05-21 11:48:41,532 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.yml
+[2025-05-21 11:48:41,542 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.json
+[2025-05-21 11:48:41,543 INFO Engine] Post-processing...
+[2025-05-21 11:48:41,543 DEBUG Engine.local] Post-process jmeter/api-test
+[2025-05-21 11:48:41,543 DEBUG Engine] Add existing artifact (move=True): /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx
+[2025-05-21 11:48:41,544 DEBUG Engine] No need to copy /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/modified_requests.jmx
+[2025-05-21 11:48:41,545 DEBUG Engine.jmeter.JTLReader] Buffer len: 2; Known errors count: 2
+[2025-05-21 11:48:41,545 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747838918, 2 in buffer
+[2025-05-21 11:48:41,547 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1747838918, labels: dict_keys(['get-inventory', '', 'get-movies', 'get-customers'])
+[2025-05-21 11:48:41,548 DEBUG Engine.jmeter.JTLReader] Aggregating: 1747838919, 1 in buffer
+[2025-05-21 11:48:41,549 DEBUG Engine.jmeter.JTLErrorsReader] Got error info for 1747838919, labels: dict_keys(['get-movies', '', 'get-customers', 'get-inventory'])
+[2025-05-21 11:48:41,550 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 2
+[2025-05-21 11:48:41,550 DEBUG Engine.consolidator] Consolidator buffer[4]: dict_keys([1747838916, 1747838917, 1747838918, 1747838919])
+[2025-05-21 11:48:41,550 DEBUG Engine.consolidator] Merging into 1747838916
+[2025-05-21 11:48:41,550 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 11:48:41,558 DEBUG Engine.consolidator] Processed datapoint: 1747838916/ConsolidatingAggregator@139636187969616
+[2025-05-21 11:48:41,558 DEBUG Engine.consolidator] Merging into 1747838917
+[2025-05-21 11:48:41,558 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 11:48:41,564 DEBUG Engine.consolidator] Processed datapoint: 1747838917/ConsolidatingAggregator@139636187969616
+[2025-05-21 11:48:41,565 DEBUG Engine.consolidator] Merging into 1747838918
+[2025-05-21 11:48:41,565 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 11:48:41,570 DEBUG Engine.consolidator] Processed datapoint: 1747838918/ConsolidatingAggregator@139636187969616
+[2025-05-21 11:48:41,570 DEBUG Engine.consolidator] Merging into 1747838919
+[2025-05-21 11:48:41,570 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2025-05-21 11:48:41,575 DEBUG Engine.consolidator] Processed datapoint: 1747838919/ConsolidatingAggregator@139636187969616
+[2025-05-21 11:48:41,575 INFO Engine.final-stats] Test duration: 0:00:08
+[2025-05-21 11:48:41,575 INFO Engine.final-stats] Samples count: 126, 100.00% failures
+[2025-05-21 11:48:41,575 INFO Engine.final-stats] Average times: total 0.264, latency 0.000, connect 0.264
+[2025-05-21 11:48:41,576 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |           0.0 |
+|          50.0 |           0.0 |
+|          90.0 |         1.284 |
+|          95.0 |         1.718 |
+|          99.0 |         2.076 |
+|          99.9 |         2.094 |
+|         100.0 |         2.094 |
++---------------+---------------+
+[2025-05-21 11:48:41,576 INFO Engine.final-stats] Request label stats:
++---------------+--------+-------+--------+-----------------------------------------------------------+
+| label         | status |  succ | avg_rt | error                                                     |
++---------------+--------+-------+--------+-----------------------------------------------------------+
+| get-customers |  FAIL  | 0.00% |  0.000 | Non HTTP response message: api                            |
+| get-inventory |  FAIL  | 0.00% |  0.791 | Non HTTP response message: api: Name or service not known |
+|               |        |       |        | Non HTTP response message: api                            |
+| get-movies    |  FAIL  | 0.00% |  0.000 | Non HTTP response message: api                            |
++---------------+--------+-------+--------+-----------------------------------------------------------+
+[2025-05-21 11:48:41,576 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2025-05-21 11:48:41,576 INFO Engine.final-stats] Test duration: 0:00:08
+[2025-05-21 11:48:41,576 INFO Engine.final-stats] Samples count: 126, 100.00% failures
+[2025-05-21 11:48:41,576 INFO Engine.final-stats] Average times: total 0.264, latency 0.000, connect 0.264
+[2025-05-21 11:48:41,577 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+|           0.0 |           0.0 |
+|          50.0 |           0.0 |
+|          90.0 |         1.284 |
+|          95.0 |         1.718 |
+|          99.0 |         2.076 |
+|          99.9 |         2.094 |
+|         100.0 |         2.094 |
++---------------+---------------+
+[2025-05-21 11:48:41,577 INFO Engine.final-stats] Request label stats:
++---------------+--------+-------+--------+-----------------------------------------------------------+
+| label         | status |  succ | avg_rt | error                                                     |
++---------------+--------+-------+--------+-----------------------------------------------------------+
+| get-customers |  FAIL  | 0.00% |  0.000 | Non HTTP response message: api                            |
+| get-inventory |  FAIL  | 0.00% |  0.791 | Non HTTP response message: api: Name or service not known |
+|               |        |       |        | Non HTTP response message: api                            |
+| get-movies    |  FAIL  | 0.00% |  0.000 | Non HTTP response message: api                            |
++---------------+--------+-------+--------+-----------------------------------------------------------+
+[2025-05-21 11:48:41,577 INFO Engine.final-stats] Dumping final status as CSV: ./test/repots/perf_result_csv.csv
+[2025-05-21 11:48:41,578 DEBUG Engine] post_process: [Errno 2] No such file or directory: '/mnt/d/Universidad/recursos/taurus api/test/test/repots/perf_result_csv.csv'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/bzt/engine/engine.py", line 356, in post_process
+    module.post_process()
+  File "/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py", line 116, in post_process
+    self.__dump_csv(self.parameters.get("dump-csv"))
+  File "/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py", line 300, in __dump_csv
+    with open(get_full_path(filename), 'wt') as fhd:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Universidad/recursos/taurus api/test/test/repots/perf_result_csv.csv'
+
+[2025-05-21 11:48:41,578 DEBUG Engine.junit-xml] Processing passfail objects: []
+[2025-05-21 11:48:41,580 INFO Engine.XUnitFileWriter] Writing JUnit XML report into: ./test/reports/junit-result.xml
+[2025-05-21 11:48:41,581 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 4
+[2025-05-21 11:48:41,581 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2025-05-21 11:48:41,592 DEBUG root] Data submit is blocked, ignoring sending KPI
+[2025-05-21 11:48:41,592 DEBUG root] Data submit is blocked, ignoring uploading files
+[2025-05-21 11:48:41,592 DEBUG Engine.blazemeter] Set last check time to: 1747838912.5835755
+[2025-05-21 11:48:41,592 INFO Engine.blazemeter] Ending data feeding...
+[2025-05-21 11:48:41,592 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-682de7c15db78230358725/terminate-external {
+ "signature": "ci1leHQtNjgyZGU3YzE1ZGI3ODIzMDM1ODcyNToxNzQ5MDQ4NTEzOjMwYzNiMzFkYmE2ZmFkOWNkZTc3ZDBmYjg4MTg1ZWJhMzc3MTJkZTFhYjg1NjI2NDE0YmM5YWI3OTRjMjNlYzkwYTM5MTEwYTlmMDAzNGZlMWZmM2VkY2U0MDk2NTNhMmNkZDFiZWVmZTI3OGQyNzAzZjA3NTMwMWFkZGExNDI4",
+ "testId": 1
+[2025-05-21 11:48:41,593 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/sessions/r-ext-682de7c15db78230358725/terminate-external
+[2025-05-21 11:48:41,858 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions/r-ext-682de7c15db78230358725/terminate-external HTTP/1.1" 200 1600
+[2025-05-21 11:48:41,859 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "success": "Terminating",
+        "session": {
+            "id": "r-ext-682de7c15db78230358725",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "Ie
+[2025-05-21 11:48:41,859 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/?public-token=Ie1DzOXdK4ePiFsZFcUsFUmOWrUE9YUPIKfnQkP6Qu3IqRQn8u#reports/r-ext-682de7c15db78230358725/summary
+[2025-05-21 11:48:41,861 DEBUG Engine.Configuration] Dumping YAML config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.yml
+[2025-05-21 11:48:41,869 DEBUG Engine.Configuration] Dumping JSON config into /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/effective.json
+[2025-05-21 11:48:41,872 ERROR root] FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Universidad/recursos/taurus api/test/test/repots/perf_result_csv.csv'
+  File "/usr/local/lib/python3.10/dist-packages/bzt/cli.py", line 283, in perform
+    self.engine.post_process()
+  File "/usr/local/lib/python3.10/dist-packages/bzt/engine/engine.py", line 370, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/lib/python3.10/dist-packages/bzt/utils.py", line 111, in reraise
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/bzt/engine/engine.py", line 356, in post_process
+    module.post_process()
+  File "/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py", line 116, in post_process
+    self.__dump_csv(self.parameters.get("dump-csv"))
+  File "/usr/local/lib/python3.10/dist-packages/bzt/modules/reporting.py", line 300, in __dump_csv
+    with open(get_full_path(filename), 'wt') as fhd:
+[2025-05-21 11:48:41,872 INFO root] Artifacts dir: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794
+[2025-05-21 11:48:41,872 WARNING root] Done performing with code: 1
+[2025-05-21 11:48:41,873 DEBUG root] Closing log handler: /mnt/d/Universidad/recursos/taurus api/test/2025-05-21_11-48-28.050794/bzt.log

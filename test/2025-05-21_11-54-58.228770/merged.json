@@ -1,0 +1,62 @@
+{
+ "execution": [
+  {
+   "executor": "jmeter",
+   "concurrency": 42,
+   "ramp-up": "3s",
+   "scenario": "api-test",
+   "iterations": 1
+  }
+ ],
+ "scenarios": {
+  "api-test": {
+   "requests": [
+    {
+     "url": "http://localhost:8000/v2/inventory",
+     "method": "GET",
+     "label": "get-inventory"
+    },
+    {
+     "url": "http://localhost:8000/v2/movies",
+     "method": "GET",
+     "label": "get-movies"
+    },
+    {
+     "url": "http://localhost:8000/v2/customers",
+     "method": "GET",
+     "label": "get-customers"
+    }
+   ]
+  }
+ },
+ "reporting": [
+  {
+   "module": "console"
+  },
+  {
+   "module": "final-stats",
+   "summary": true,
+   "percentiles": true,
+   "failed-labels": false,
+   "test-duration": true,
+   "dump-csv": "./test/reports/perf_result_csv.csv"
+  },
+  {
+   "module": "junit-xml",
+   "data-source": "pass-fail",
+   "filename": "./test/reports/junit-result.xml"
+  },
+  {
+   "module": "blazemeter",
+   "report-name": "API Performance Test 2",
+   "test": "API Test v2",
+   "project": "API Testing",
+   "public-report": true,
+   "token": "********"
+  }
+ ],
+ "settings": {
+  "check-interval": "2s",
+  "verbose": false
+ }
+}

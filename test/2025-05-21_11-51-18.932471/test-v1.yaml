@@ -5,17 +5,17 @@ execution:
     ramp-up: 3s       # Tiempo para alcanzar la concurrencia completa
     scenario: api-test
     iterations: 1   # Número de iteraciones por usuario virtual
-    
+
 scenarios:
   api-test:
     requests:
-      - url: http://localhost:8000/v2/inventory
+      - url: http://api:8000/v1/inventory
         method: GET
         label: get-inventory
-      - url: http://localhost:8000/v2/movies
+      - url: http://api:8000/v1/movies
         method: GET
         label: get-movies
-      - url: http://localhost:8000/v2/customers
+      - url: http://api:8000/v1/customers
         method: GET
         label: get-customers
 
@@ -26,16 +26,19 @@ reporting:
     percentiles: true 
     failed-labels: false
     test-duration: true
-    dump-csv: ./test/reports/perf_result_csv.csv
+    dump-csv: ./test/repots/perf_result_csv.csv
   - module: junit-xml
     data-source: pass-fail
     filename: ./test/reports/junit-result.xml
   - module: blazemeter
-    report-name: API Performance Test 2
-    test: API Test v2
+    report-name: API Performance Test 1
+    test: API Test v1
     project: API Testing
     public-report: true
-    
+    token: 3ce8d3fd81b16f0f141b122c:f360f8500838d23456221a8285a253240d1103b4115f33c02ec7958c9a361c13568e5814
+    filename: ./test/reports/junit-result.xml
+
+
 settings:
   check-interval: 2s  # intervalo para recopilar métricas
   verbose: false      # más detalles en la salida de consola

@@ -166,7 +166,7 @@ async def get_all_customers():
 
 # Endpoint 4: Obtener inventario optimizado
 @app.get("/v2/inventory")
-@cache(expire=timedelta(minutes=40))  # Caché válida por 40 minutos
+@cache(expire=60*40)  # Caché válida por 40 minutos
 
 async def get_inventory():
     """
@@ -198,7 +198,6 @@ async def get_inventory():
                     JOIN inventory i ON s.store_id = i.store_id
                     JOIN film f ON i.film_id = f.film_id
                     GROUP BY s.store_id, f.film_id, f.title
-                    ORDER BY s.store_id, f.title;
                    """)
         rows = await cursor.fetchall()
     conn.close()
@@ -219,7 +218,7 @@ async def get_inventory():
 
 # Endpoint 5: Obtener películas optimizado
 @app.get("/v2/movies")
-@cache(expire=timedelta(minutes=40))  # Caché válida por 40 minutos
+@cache(expire=60*40)  # Caché válida por 40 minutos
 
 async def get_all_movies():
     """
@@ -275,7 +274,7 @@ async def get_all_movies():
 
 # Endpoint 6: Obtener clientes optimizado
 @app.get("/v2/customers")
-@cache(expire=timedelta(minutes=5))  # Caché válida por 5 minutos
+@cache(expire=60*5)  # Caché válida por 5 minutos
 async def get_all_customers():
     """
     Versión optimizada del endpoint de clientes utilizando JOINs SQL multinivel.
@@ -301,12 +300,10 @@ async def get_all_customers():
         query = """
         SELECT 
             c.customer_id, c.first_name, c.last_name, c.email,
-            r.rental_id, r.rental_date, r.return_date, r.inventory_id, r.staff_id,
-            p.payment_id, p.amount, p.payment_date, p.staff_id AS payment_staff_id
+            r.rental_id, r.rental_date, r.return_date, r.inventory_id, r.staff_id
         FROM customer c
         LEFT JOIN rental r ON c.customer_id = r.customer_id
-        LEFT JOIN payment p ON r.rental_id = p.rental_id
-        ORDER BY c.customer_id, r.rental_id, p.payment_id
+        ORDER BY c.customer_id, r.rental_id
     """
         await cursor.execute(query)
         rows = await cursor.fetchall()
@@ -338,14 +335,6 @@ async def get_all_customers():
                     "payments": []
                 }
                 rentals.append(rental)
-            # Pagos pueden ser None si el rental no tiene pagos
-            if row["payment_id"]:
-                payment = {
-                    "payment_id": row["payment_id"],
-                    "amount": row["amount"],
-                    "payment_date": row["payment_date"],
-                    "staff_id": row["payment_staff_id"]
-                }
-                rental["payments"].append(payment)
+            
 
     return {"customers": list(customers_dict.values())}
